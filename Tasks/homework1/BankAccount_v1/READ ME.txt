@@ -1,0 +1,24 @@
+Having accountID is eligible only for clients.
+The structure of client's accounts next:
+
+Arraylist of clients: [Client 1]  [Client 2]  [Client 3]  [Client 4]  [Client 5]  [Client 6]  [Client 7] ...
+                        id 1         id 2         id 3        id 4        id 5       id 6        id 7
+
+their accounts        [Account1]  [Account1]  [Account1]  [Account1]  [Account1]  [Account1]  [Account1] ...
+                         id 1         id 1        id 1        id 1        id 1       id 1        id 1
+                      [Account2]  [Account1]              [Account2]  [Account2]  [Account2]  
+                         id 2         id 2                    id 2        id 2       id 2     
+                      [Account3]                          [Account3]              [Account3]  
+                         id 3                                id 3                   id 3     
+                      [Account4]                          [Account4]    
+                         id 4                                id 4    
+                         ...          ...         ...        ...           ...       ...          ...
+
+That is why to refer to some account firstly writing a clientID is necessary, then should be accountID of that particular client. 
+It is necessary for working with account. 
+
+
+Meanwhile class Bank also has list of the same accounts in following formnat:
+
+[Account1]  [Account2]  [Account3]  [Account4]  [Account5]  [Account6]  [Account7] ...
+   id 1         id 2        id 3        id 4        id 5       id 6        id 7
